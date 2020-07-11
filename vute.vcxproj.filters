@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="rc">
+      <UniqueIdentifier>{550d7b0a-d061-4908-b6fe-4eab55341156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{8112e434-66d0-4f55-88d0-842b152a425b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\IO">
+      <UniqueIdentifier>{377479c2-aca4-4349-917d-e2f543a0574e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\cmd">
+      <UniqueIdentifier>{02720ba0-279e-49af-a521-c01ed4f568f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\utils">
+      <UniqueIdentifier>{5b56e0c9-e8a8-4f97-a1a8-bb3d101ac3c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\utils\report">
+      <UniqueIdentifier>{eccdc22a-022f-4e28-936b-fbbff98a956f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\utils\parser">
+      <UniqueIdentifier>{f0da6858-612d-4e7c-8aea-7e3218ea8311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\IO\rcfile">
+      <UniqueIdentifier>{c5f0b110-33b7-4b1a-a393-24b1ca9b6564}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\icon.ico">
+      <Filter>rc</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vute.rc">
+      <Filter>rc</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>rc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\application.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\IO\filestream.h">
+      <Filter>app\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\IO\stream.h">
+      <Filter>app\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\IO\rcfile\resourcefile.h">
+      <Filter>app\IO\rcfile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\app\application.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\IO\rcfile\resourcefile.cpp">
+      <Filter>app\IO\rcfile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\app\IO\filestream.inl">
+      <Filter>app\IO</Filter>
+    </None>
+  </ItemGroup>
+</Project>
